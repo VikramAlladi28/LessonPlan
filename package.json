@@ -1,7 +1,8 @@
 {
-  "name": "lessonplan",
-  "version": "0.1.0",
-  "private": true,
+  "name": "lesson-plan",
+  "version": "0.1.1",
+  "main":"dist/index.js/index.js",
+  "module":"dist/index.es.js/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

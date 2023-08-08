@@ -6,7 +6,7 @@ import postcss from 'rollup-plugin-postcss'
 
 export default [
   {
-    input: './src/index.js',
+    input: './src/main.js',
     output: [
       {
         dir: 'dist/index.js',
@@ -24,12 +24,13 @@ export default [
         minimize: true,
       }),
       babel({
+        extensions: ['.js', '.jsx'],
         exclude: 'node_modules/**',
         presets: ['@babel/preset-react'],
       }),
-      external(),
       resolve(),
       terser(),
     ],
+    external: ['react', 'react-dom', '@emotion/react', '@emotion/styled'],
   },
 ]
