@@ -28,6 +28,7 @@ export default [
         exclude: 'node_modules/**',
         presets: ['@babel/preset-react'],
       }),
+      external(),
       resolve(),
       terser(),
     ],
