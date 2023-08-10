@@ -1,7 +1,8 @@
 {
-  "name": "lessonplan",
-  "version": "0.1.0",
-  "private": true,
+  "name": "lesson-plan",
+  "version": "0.2.0",
+  "main": "dist/cjs",
+  "module": "dist/es",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -19,7 +20,7 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-lib":"rollup -c"
+    "build-lib": "rollup -c"
   },
   "eslintConfig": {
     "extends": [
@@ -58,12 +59,13 @@
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^7.2.1",
     "webpack": "^5.88.2"
   },
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0"
   }
 }
