@@ -7,7 +7,7 @@ import packageJSON from './package.json'
 
 export default [
   {
-    input: './src/index.js',
+    input: './src/main.js',
     output: [
       {
         dir: packageJSON.main,
@@ -25,6 +25,7 @@ export default [
         minimize: true,
       }),
       babel({
+        extensions: ['.js', '.jsx'],
         extensions: ['.js', '.jsx'],
         exclude: 'node_modules/**',
         presets: ['@babel/preset-react', '@babel/preset-env'],
